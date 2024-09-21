@@ -7,15 +7,17 @@ function Register ()
     const [prenom,setPrenom] = useState("");
     const [adresse,setAdresse] = useState("");
 
-    const HandleSubmit = (event) => {
+    const HandleSubmit = (event) =>
+    {
         event.preventDefault()
-        alert('Nom: $nom\n
-        Prenom: $prenom\n
-        Adresse: $adresse')
+        alert('Nom: $nom\nPrenom: $prenom\nAdresse: $adresse')
     }
 
-    return;
+    return (
         <>
-
+            
         </>
+    )
 }
+
+export default Register;
