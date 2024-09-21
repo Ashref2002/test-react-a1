@@ -1,58 +1,50 @@
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
+import { Link, Outlet } from "react-router-dom";
 
-    <!-- Footer -->
+const Footer = () => {
+    return (
+        <>
+            <div className="container my-5">
+
     <footer
-            class="text-center text-lg-start text-white"
+            className="text-center text-lg-start text-white"
             style="background-color: #1c2331"
             >
-      <!-- Section: Social media -->
       <section
-               class="d-flex justify-content-between p-4"
+               className="d-flex justify-content-between p-4"
                style="background-color: #6351ce"
                >
-        <!-- Left -->
-        <div class="me-5">
+        <div className="me-5">
           <span>Get connected with us on social networks:</span>
         </div>
-        <!-- Left -->
   
-        <!-- Right -->
         <div>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-github"></i>
-          </a>
+          <Link to="" className="text-white me-4">
+            <i className="fab fa-facebook-f"></i>
+          </Link>
+          <Link to="" className="text-white me-4">
+            <i className="fab fa-twitter"></i>
+          </Link>
+          <Link to="" className="text-white me-4">
+            <i className="fab fa-google"></i>
+          </Link>
+          <Link to="" className="text-white me-4">
+            <i className="fab fa-instagram"></i>
+          </Link>
+          <Link to="" className="text-white me-4">
+            <i className="fab fa-linkedin"></i>
+          </Link>
+          <Link to="" className="text-white me-4">
+            <i className="fab fa-github"></i>
+          </Link>
         </div>
-        <!-- Right -->
       </section>
-      <!-- Section: Social media -->
-  
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold">Company name</h6>
+      <section className="">
+        <div className="container text-center text-md-start mt-5">
+          <div className="row mt-3">
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold">Company name</h6>
               <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  className="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
               <p>
@@ -61,87 +53,74 @@
                 elit.
               </p>
             </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Products</h6>
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold">Products</h6>
               <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  className="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
               <p>
-                <a href="#!" class="text-white">MDBootstrap</a>
+                <Link to="#!" className="text-white">MDBootstrap</Link>
               </p>
               <p>
-                <a href="#!" class="text-white">MDWordPress</a>
+                <Link to="#!" className="text-white">MDWordPress</Link>
               </p>
               <p>
-                <a href="#!" class="text-white">BrandFlow</a>
+                <Link to="#!" className="text-white">BrandFlow</Link>
               </p>
               <p>
-                <a href="#!" class="text-white">Bootstrap Angular</a>
+                <Link to="#!" className="text-white">Bootstrap Angular</Link>
               </p>
             </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Useful links</h6>
+
+            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+              <h6 className="text-uppercase fw-bold">Useful links</h6>
               <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  className="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
               <p>
-                <a href="#!" class="text-white">Your Account</a>
+                <Link to="#!" className="text-white">Your Account</Link>
               </p>
               <p>
-                <a href="#!" class="text-white">Become an Affiliate</a>
+                <Link to="#!" className="text-white">Become an Affiliate</Link>
               </p>
               <p>
-                <a href="#!" class="text-white">Shipping Rates</a>
+                <Link to="#!" className="text-white">Shipping Rates</Link>
               </p>
               <p>
-                <a href="#!" class="text-white">Help</a>
+                <Link to="#!" className="text-white">Help</Link>
               </p>
             </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Contact</h6>
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 className="text-uppercase fw-bold">Contact</h6>
               <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  className="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
-              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <p><i className="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+              <p><i className="fas fa-envelope mr-3"></i> info@example.com</p>
+              <p><i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
             </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row -->
         </div>
       </section>
-      <!-- Section: Links  -->
-  
-      <!-- Copyright -->
       <div
-           class="text-center p-3"
+           className="text-center p-3"
            style="background-color: rgba(0, 0, 0, 0.2)"
            >
         © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-           >MDBootstrap.com</a
-          >
+        <Link className="text-white" to="https://mdbootstrap.com/"
+           >MDBootstrap.com</Link>
+
       </div>
-      <!-- Copyright -->
     </footer>
-    <!-- Footer -->
   
-  </div>
-  <!-- End of .container -->
+            </div>
+            <Outlet/>
+        </>
+    )
+};
+export default Footer;
