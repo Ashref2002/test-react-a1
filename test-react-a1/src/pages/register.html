@@ -1,0 +1,21 @@
+import "../pages/css/style.css";
+import { useState } from "react";
+
+function Register ()
+{
+    const [nom,setNom] = useState("");
+    const [prenom,setPrenom] = useState("");
+    const [adresse,setAdresse] = useState("");
+
+    const HandleSubmit = (event) => {
+        event.preventDefault()
+        alert('Nom: $nom\n
+        Prenom: $prenom\n
+        Adresse: $adresse')
+    }
+
+    return;
+        <>
+
+        </>
+}
